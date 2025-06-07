@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Min første hjemmeside</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Min Simple Hjemmeside</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hej verden!</h1>
-  <p>Velkommen til min hjemmeside.</p>
-  <button onclick="sigHej()">Klik mig</button>
+  <nav>
+    <ul>
+      <li><a href="#forside">Forside</a></li>
+      <li><a href="#projekter">Projekter</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <section id="forside">
+    <h1>Velkommen!</h1>
+    <p>Dette er min enkle hjemmeside med billede og navigation.</p>
+    <img src="image.jpg" alt="Eksempelbillede" />
+  </section>
+
+  <section id="projekter">
+    <h2>Projekter</h2>
+    <p>Her kunne du præsentere dine ting.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <button onclick="visKontakt()">Vis kontaktinfo</button>
+    <p id="kontaktinfo" style="display:none;">Email: eksempel@domæne.dk</p>
+  </section>
 
   <script src="script.js"></script>
 </body>
